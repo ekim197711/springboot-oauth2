@@ -1,0 +1,91 @@
+{
+  "authorities": [
+    {
+      "authority": "ROLE_ADMINASSISTANT"
+    },
+    {
+      "authority": "ROLE_DEVELOPER"
+    }
+  ],
+  "details": {
+    "remoteAddress": "127.0.0.1",
+    "sessionId": null,
+    "tokenValue": "870d1e2f-c49c-4733-b748-458d05641788",
+    "tokenType": "Bearer",
+    "decodedDetails": null
+  },
+  "authenticated": true,
+  "userAuthentication": {
+    "authorities": [
+      {
+        "authority": "ROLE_ADMINASSISTANT"
+      },
+      {
+        "authority": "ROLE_DEVELOPER"
+      }
+    ],
+    "details": {
+      "grant_type": "password",
+      "username": "mike"
+    },
+    "authenticated": true,
+    "principal": {
+      "password": null,
+      "username": "mike",
+      "authorities": [
+        {
+          "authority": "ROLE_ADMINASSISTANT"
+        },
+        {
+          "authority": "ROLE_DEVELOPER"
+        }
+      ],
+      "accountNonExpired": true,
+      "accountNonLocked": true,
+      "credentialsNonExpired": true,
+      "enabled": true
+    },
+    "credentials": null,
+    "name": "mike"
+  },
+  "oauth2Request": {
+    "clientId": "myapp1",
+    "scope": [
+      "read",
+      "write",
+      "lookinguptheweather"
+    ],
+    "requestParameters": {
+      "grant_type": "password",
+      "username": "mike"
+    },
+    "resourceIds": [],
+    "authorities": [],
+    "approved": true,
+    "refresh": false,
+    "redirectUri": null,
+    "responseTypes": [],
+    "extensions": {},
+    "grantType": "password",
+    "refreshTokenRequest": null
+  },
+  "principal": {
+    "password": null,
+    "username": "mike",
+    "authorities": [
+      {
+        "authority": "ROLE_ADMINASSISTANT"
+      },
+      {
+        "authority": "ROLE_DEVELOPER"
+      }
+    ],
+    "accountNonExpired": true,
+    "accountNonLocked": true,
+    "credentialsNonExpired": true,
+    "enabled": true
+  },
+  "credentials": "",
+  "clientOnly": false,
+  "name": "mike"
+}

@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6eb98d77-e339-4ed9-af89-e597794ef071",
+		"_postman_id": "1b47d7a4-b0e3-490c-b5ad-3ade9377b386",
 		"name": "OauthDemo",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -9,9 +9,30 @@
 			"name": "WhoAmI",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 870d1e2f-c49c-4733-b748-458d05641788",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:8081/showprincipal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"showprincipal"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
 				}
 			},
 			"response": []
@@ -19,10 +40,51 @@
 		{
 			"name": "LoginLocal",
 			"request": {
-				"method": "GET",
-				"header": [],
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bXlhcHAxOm15YXBwMXBhc3N3b3Jk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "mike",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "mikespassword",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:8081/oauth/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"oauth",
+						"token"
+					]
 				}
 			},
 			"response": []

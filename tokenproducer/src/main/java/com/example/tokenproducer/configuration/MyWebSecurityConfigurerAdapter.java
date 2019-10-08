@@ -8,11 +8,11 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @Configuration
 @EnableWebSecurity
-public class MyWebSecConfig extends WebSecurityConfigurerAdapter {
-
+public class MyWebSecurityConfigurerAdapter extends WebSecurityConfigurerAdapter {
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
+
 }

@@ -1,6 +1,7 @@
 curl \
 -X POST \
--u mike:mike1234 \
+-u myapp1:myapp1password \
 -H "Content-Type: application/x-www-form-urlencoded" \
--d  "client_id=myclient&client_secret=myclientsecret&grant_type=password" \
+-d  "username=mike&password=mikespassword&grant_type=password" \
 "http://localhost:8081/oauth/token"
+
